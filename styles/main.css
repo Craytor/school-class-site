@@ -1,0 +1,42 @@
+body {
+	font-size: 1em;
+	font-weight: normal;
+	font-family: Arial, Sans-serif;
+	color: #000; /* black */
+	text-align: left;
+}
+h1 {
+	font-size: 1.8em;
+	font-weight: bold;
+	color: #0000ff; /* blue */
+	text-align: center;
+}
+h2 {
+	font-size: 1.6em;
+	font-weight: bold;
+	color: #000; /* black */
+	text-align: center;
+}
+h3 {
+	font-size: 1.4em;
+	font-weight: bold;
+	color: #000; /* black */
+	text-align: center;
+}
+h4 {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #000; /* black */
+	text-align: center;
+}
+div {
+	max-width: 400px;
+	margin: 0 auto;
+}
+p {
+	color: #2c3e50;
+}
+nav {
+	max-width: 400px;
+	margin: 0 auto;
+}

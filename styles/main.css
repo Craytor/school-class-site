@@ -1,42 +1,82 @@
+/*
+ *	COLOR SCHEME:
+ *	#ECECEC 	SMOKE GRAY
+ *	#2C3E50 	MIDNIGHT BLUE
+ *	#000 		BLACK
+ *  #22313F 	EBONY CLAY
+ */
+
 body {
 	font-size: 1em;
 	font-weight: normal;
-	font-family: Arial, Sans-serif;
-	color: #000; /* black */
+	font-family: Verdana, Verdana, sans-serif;
+	color: #22313F; /* black */
 	text-align: left;
+	background-color: #ECECEC; /* smoke gray */
+	margin-left: 10%;
+	margin-right: 10%;
 }
+h1, h2, h3, h4, h5, h6 {
+	color: #2c3e50;
+	font-family: Arial Black, Arial Black, Gadget, sans-serif;
+}
+
 h1 {
 	font-size: 1.8em;
 	font-weight: bold;
-	color: #0000ff; /* blue */
 	text-align: center;
 }
 h2 {
 	font-size: 1.6em;
 	font-weight: bold;
-	color: #000; /* black */
 	text-align: center;
 }
 h3 {
 	font-size: 1.4em;
 	font-weight: bold;
-	color: #000; /* black */
 	text-align: center;
 }
 h4 {
 	font-size: 1.2em;
 	font-weight: bold;
-	color: #000; /* black */
 	text-align: center;
 }
 div {
-	max-width: 400px;
 	margin: 0 auto;
 }
 p {
-	color: #2c3e50;
+	color: #22313F;
 }
 nav {
-	max-width: 400px;
 	margin: 0 auto;
+}
+
+div.model-box {
+	background-color: red;
+	padding: 0;
+	border: 1px solid black;
+	margin: 0;
+}
+div.model-box .inner {
+	background-color: white;
+    padding: 1em;
+    border-width: 10px; 
+    border-style: solid;
+    border-color: blue;
+    margin: 10px !important;
+}
+
+#main {
+	clear:both;
+	padding-top: 40px;
+}
+
+.about {
+	width: 50%;
+	float:left;
+
+}
+.course {
+	width: 50%;
+	float:right;
 }

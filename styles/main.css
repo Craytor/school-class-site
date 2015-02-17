@@ -4,6 +4,9 @@
  *	#2C3E50 	MIDNIGHT BLUE
  *	#000 		BLACK
  *  #22313F 	EBONY CLAY
+ *
+ *	padding: top right bottom left;
+ *
  */
 
 html {
@@ -24,10 +27,10 @@ h1, h2, h3, h4, h5, h6 {
 	color: #2c3e50;
 	font-family: Arial Black, Arial Black, Gadget, sans-serif;
 }
-
-h1 > small, h2 > small, h3 > small, h4 > small, h5 > small, h6 > small {
-	font-weight: 200 !important;
-	color: #95a5a6;
+ h4 > small {
+	font-weight: 300 !important;
+	color: #34495e;
+	font-size: .8em;
 }
 
 h1 {
@@ -174,6 +177,21 @@ div.model-box .inner {
 p#overview:first-letter {
 	font-size: 20px;
 	font-weight: 600;
+}
+
+.unit {
+	/*
+	 *	padding: top right bottom left;
+	 */
+	background-color: #bdc3c7;
+	border-radius: 10px;
+	padding: 15px 25px 10px 25px;
+	margin-bottom: 25px;
+}
+
+.unit > h4 {
+	margin: 0;
+	padding: 0;
 }
 
 /* Table */

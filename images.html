@@ -2,41 +2,42 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Web Portfolio: Tyler Youschak's Video Page</title>
+		<title>Web Portfolio: Tyler Youschak's Images Page</title>
 		<link type="text/css" rel="stylesheet" href="styles/main.css" media="screen">
+		<link type="text/css" rel="stylesheet" href="styles/other.css" media="screen">
 		<link type="text/css" rel="stylesheet" href="styles/font-awesome.min.css" media="screen">
 		<link rel="shortcut icon" href="images/stupid_images/favicon.png">
 	</head>
 	<body>
-	<div>
-		<div id="skipnav"><a href="#main"><i class="fa fa-arrow-down"></i></a></div>
 		<!-- The website content will go here -->
-		<h1>Web Portfolio: Video</h1>
+		<div id="skipnav"><a href="#main"><i class="fa fa-arrow-down"></i></a></div>
 
-		<!-- Site Navigation -->
+		<h1>Images</h1>
+
 		<nav>
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="accessibility.html">Accessibility</a></li>		
-				<li><a href="usability.html">Usability</a></li>
+				<li><a class="active" href="usability.html">Usability</a></li>
 				<li><a href="graphics.html">Graphics</a></li>
 				<li><a href="javascript.html">Javascript</a></li>
 				<li><a href="tools.html">Tools</a></li>
-				<li><a class="active" href="video.html">Video</a></li>
+				<li><a href="video.html">Video</a></li>
 			</ul>
 		</nav>
 
 		<!-- main content -->
 		<main id="main">
-			<p>This page will contain a video about a current unkown subject.</p>
-
-			<video controls poster="images/code.jpg" preload="auto">
-				<source src="videos/code.mp4" type="video/mp4"></source>
-				<source src="videos/code.webm" type="video/webm"></source>
-				<track src="videos/code.vtt" kind="captions" srclang="en" default></track>
-			</video>
+			<h2 id="buttons">Sample Buttons</h2>
+			<a class="btn" href="#btn">Go to Home</a>
+			<br>
+			<br>
+			<br>
+			<a href="graphics.html"><img src="images/stupid_images/stupid_graphics_button.png"></a>
+			<br>
+			<br>
+			<br>
+			<a href="mailto:tyleryouschak@gmail.com"><img src="images/stupid_images/stupid_email_button.png"></a>
 		</main>
-
-		
 	</body>
 </html>

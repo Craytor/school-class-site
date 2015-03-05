@@ -1,0 +1,9 @@
+.btn {
+	height: 50px;
+	width: 50px;
+	background-image: url(../images/stupid_images/Untitled.png);
+	color: #fff;
+	background-repeat: repeat;
+	padding: 15px;
+	border-radius: 6px;
+}

@@ -11,6 +11,7 @@
 
 html {
 	width: 100%;
+
 }
 
 body {
@@ -20,6 +21,11 @@ body {
 	color: #22313F; /* black */
 	text-align: left;
 	background-color: #ECECEC; /* smoke gray */
+	margin: 0;
+	padding: 0;
+}
+
+.container {
 	margin-left: 10%;
 	margin-right: 10%;
 }
@@ -64,8 +70,12 @@ div {
 p {
 	color: #22313F;
 }
+
 nav {
 	margin: 0 auto;
+	width: 100%;
+	height: auto;
+	background-color: #2c3e50;
 }
 
 nav > ul {
@@ -80,8 +90,6 @@ nav > ul {
 nav > ul > li {
 	display: block;
 	display: inline-block;
-	margin-top: 3px;
-	margin-bottom: 3px;
 }
 
 nav > ul > li > a {
@@ -254,4 +262,16 @@ a {
 
 a:hover, a:focus {
 	color: #2c3e50;
+}
+
+.full-width {
+	height: auto;
+	width: 100%;
+}
+
+.banner-img {
+	background-color: #2980b9;
+	margin: 0 auto;
+	border-bottom: 2px solid #f39c12;
+	text-align: center;
 }

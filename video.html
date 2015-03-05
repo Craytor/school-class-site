@@ -9,34 +9,39 @@
 	</head>
 	<body>
 	<div>
+		<!-- Jump to main link -->
 		<div id="skipnav"><a href="#main"><i class="fa fa-arrow-down"></i></a></div>
-		<!-- The website content will go here -->
-		<h1>Web Portfolio: Video</h1>
-
-		<!-- Site Navigation -->
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="accessibility.html">Accessibility</a></li>		
-				<li><a href="usability.html">Usability</a></li>
-				<li><a href="graphics.html">Graphics</a></li>
-				<li><a href="javascript.html">Javascript</a></li>
-				<li><a href="tools.html">Tools</a></li>
-				<li><a class="active" href="video.html">Video</a></li>
-			</ul>
-		</nav>
-
-		<!-- main content -->
-		<main id="main">
-			<p>This page will contain a video about a current unkown subject.</p>
-
-			<video controls poster="images/code.jpg" preload="auto">
-				<source src="videos/code.mp4" type="video/mp4"></source>
-				<source src="videos/code.webm" type="video/webm"></source>
-				<track src="videos/code.vtt" kind="captions" srclang="en" default></track>
-			</video>
-		</main>
-
+		<div class="full-width">
+			<div class="banner-img">
+				<img src="images/banner.jpg" alt="Meh banner!" align="center"/>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="accessibility.html">Accessibility</a></li>		
+					<li><a href="usability.html">Usability</a></li>
+					<li><a href="graphics.html">Graphics</a></li>
+					<li><a href="javascript.html">Javascript</a></li>
+					<li><a href="tools.html">Tools</a></li>
+					<li><a class="active" href="video.html">Video</a></li>
+				</ul>
+			</nav>
+		</div>
 		
+		<div class="container">
+			<h1>Web Portfolio: Video</h1>
+
+			<!-- main content -->
+			<main id="main">
+				<p>This page will contain a video about a current unkown subject.</p>
+
+				<video controls poster="images/code.jpg" preload="auto">
+					<source src="videos/code.mp4" type="video/mp4"></source>
+					<source src="videos/code.webm" type="video/webm"></source>
+					<track src="videos/code.vtt" kind="captions" srclang="en" default></track>
+				</video>
+			</main>
+
+		</div>
 	</body>
 </html>

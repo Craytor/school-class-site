@@ -6,6 +6,30 @@
 		<link type="text/css" rel="stylesheet" href="styles/main.css" media="screen">
 		<link type="text/css" rel="stylesheet" href="styles/font-awesome.min.css" media="screen">
 		<link rel="shortcut icon" href="images/stupid_images/favicon.png">
+
+		<style>
+			button {
+				background-color: #2980b9;
+				color: #fff;
+				width: auto;
+				height: auto;
+				padding: 5px 10px;
+				border: none;
+				cursor: pointer;
+				border-radius: 4px;
+			}
+
+			button:hover {
+				background-color: #e74c3c;
+			}
+		</style>
+		<script>
+			function showAlert()
+			{
+				var myText = "Whoa! You just clicked a button, and you got this message!";
+				alert(myText);
+			}
+		</script>
 	</head>
 	<body>
 		<!-- Jump to main link -->
@@ -32,8 +56,8 @@
 			<h1>Javascript</h1>
 
 			<!-- main content -->
-			<main id="main">
-				
+			<main id="main" style="text-align: center;">
+				<button onclick="showAlert()">Show an Alert</button>
 			</main>
 		</div>
 	</body>

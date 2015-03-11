@@ -29,9 +29,27 @@
 				var myText = "Whoa! You just clicked a button, and you got this message!";
 				alert(myText);
 			}
+
+			function updateTime()
+			{
+				// define variables for time
+				var now = new Date();
+				var hours = now.getHours();
+				var minutes = now.getMinutes();
+				var seconds = now.getSeconds();
+
+				// create time string
+				var currentTime = hours + ':' + minutes + ':' + seconds;
+
+				// get the clock element
+				var myClock = document.getElementById('clock');
+
+				// update the clock's inner html
+				myClock.innerHTML = currentTime;
+			}
 		</script>
 	</head>
-	<body>
+	<body onload="updateTime()">
 		<!-- Jump to main link -->
 		<div id="skipnav"><a href="#main"><i class="fa fa-arrow-down"></i></a></div>
 		<div class="full-width">
@@ -58,6 +76,8 @@
 			<!-- main content -->
 			<main id="main" style="text-align: center;">
 				<button onclick="showAlert()">Show an Alert</button>
+
+				<div id="clock"></div>
 			</main>
 		</div>
 	</body>

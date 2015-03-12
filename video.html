@@ -6,6 +6,31 @@
 		<link type="text/css" rel="stylesheet" href="styles/main.css" media="screen">
 		<link type="text/css" rel="stylesheet" href="styles/font-awesome.min.css" media="screen">
 		<link rel="shortcut icon" href="images/stupid_images/favicon.png">
+
+		<script>
+			var video, speed, volume;
+			function init()
+			{
+				video = document.getElementById('myvideo');
+
+				speed = video.playbackRate;
+
+				volume = 0.5;
+				video.volume = volume;
+			}
+
+			function play()
+			{
+				video.play();
+			}
+
+			function pause()
+			{
+				video.pause();
+			}
+
+			
+		</script>
 	</head>
 	<body>
 	<div>
@@ -35,11 +60,19 @@
 			<main id="main">
 				<p>This page will contain a video about a current unkown subject.</p>
 
-				<video controls poster="images/code.jpg" preload="auto">
+				<video poster="images/code.jpg" preload="auto">
 					<source src="videos/code.mp4" type="video/mp4"></source>
 					<source src="videos/code.webm" type="video/webm"></source>
 					<track src="videos/code.vtt" kind="captions" srclang="en" default></track>
 				</video>
+				<div id="myplayer">
+					<button onclick="play()">Play</button>
+					<button onclick="pause()">Pause</button>
+					<button onclick="changeSpeed('up')">Faster</button>
+					<button onclick="changeSpeed('down')">Slower</button>
+					<button onclick="changeVolume('up')">Louder</button>
+					<button onclick="changeVolume('down')">Softer</button>
+				</div>
 			</main>
 
 		</div>

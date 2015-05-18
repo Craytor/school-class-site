@@ -9,8 +9,7 @@
 
 		<script>
 			var video, speed, volume;
-			function init()
-			{
+			function init() {
 				video = document.getElementById('myvideo');
 
 				speed = video.playbackRate;
@@ -19,26 +18,55 @@
 				video.volume = volume;
 			}
 
-			function play()
-			{
+			function play() {
 				video.play();
 			}
 
-			function pause()
-			{
+			function pause() {
 				video.pause();
 			}
 
+			function changeSpeed(direction) {
+				if(direction == 'up') {
+					if(speed < 10) {
+						speed = speed + 0.1;
+					}
+				}
+
+				if(direction == 'down') {
+					if(speed > 0) {
+						speed = speed - 0.1;
+					}
+				}
+
+				video.playbackRate = speed;
+			}
+
+			function changeVolume(direction) {
+				if(direction == 'up') {
+					if(volume < 0.9) {
+						volume = volume + 0.1;
+					}
+				}
+
+				if(direction == 'down') {
+					if(speed > 0.1) {
+						volume = volume - 0.1;
+					}
+				}
+
+				video.volume = volume;
+			}
 			
+			window.onload = init;
 		</script>
 	</head>
 	<body>
-	<div>
 		<!-- Jump to main link -->
 		<div id="skipnav"><a href="#main"><i class="fa fa-arrow-down"></i></a></div>
 		<div class="full-width">
 			<div class="banner-img">
-				<img src="images/banner.jpg" alt="Meh banner!" align="center"/>
+				<img class="banner" src="images/banner.jpg" alt="Meh banner!"/>
 			</div>
 			<nav>
 				<ul>
@@ -60,10 +88,10 @@
 			<main id="main">
 				<p>This page will contain a video about a current unkown subject.</p>
 
-				<video poster="images/code.jpg" preload="auto">
-					<source src="videos/code.mp4" type="video/mp4"></source>
-					<source src="videos/code.webm" type="video/webm"></source>
-					<track src="videos/code.vtt" kind="captions" srclang="en" default></track>
+				<video id="myvideo" poster="images/code.jpg" preload="auto">
+					<source src="videos/code.mp4" type="video/mp4" />
+					<source src="videos/code.webm" type="video/webm" />
+					<track src="videos/code.vtt" kind="captions" srclang="en" default />
 				</video>
 				<div id="myplayer">
 					<button onclick="play()">Play</button>
